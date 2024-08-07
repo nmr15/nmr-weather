@@ -77,21 +77,21 @@ function App()
       <section className="pt-8">
         <div className="flex justify-center">
           <form className="">
-            <input type="text" className="px-1 text-lg" placeholder="Enter city name" onChange={(e) => cityNameInput(e)} />
-            <select name="unitTemp" className="text-lg" id="unitTemp" onChange={(e) => selectUnit(e)}>
+            <input type="text" className="input-city px-1 text-lg" placeholder="Enter city name" onChange={(e) => cityNameInput(e)} />
+            <select name="unitTemp" className="mx-1 text-lg" id="unitTemp" onChange={(e) => selectUnit(e)}>
               <option value="imperial">F</option>
               <option value="metric">C</option>
             </select>
-            <button className="text-lg" onClick={cityNameSubmit}>Submit</button>
+            <button className="btn text-lg" onClick={cityNameSubmit}>Submit</button>
           </form>
         </div>
       </section>
       
-      <section className="pt-8">
+      <section className="pt-8 mt-8">
       {
         items ? (
-          <div className="flex justify-center">
-            <div className="card w-2/5 pb-2.5 rounded text-white">
+          <div className="lg:flex justify-center">
+            <div className="card lg:w-2/5 pb-2.5 rounded text-white">
               <h3 className="py-2.5 px-4 bg-black bg-opacity-60 text-xl">{items.name}</h3>
               <div className="flex justify-between">
                 <h3 className="py-2.5 px-4 text-6xl align-middle">{items.main.temp}&deg;</h3>
