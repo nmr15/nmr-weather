@@ -110,7 +110,7 @@ function App()
           :
 
           (
-            <h3>Loading...</h3>
+            <h3>Enter city name</h3>
           )
       }
       </section>
